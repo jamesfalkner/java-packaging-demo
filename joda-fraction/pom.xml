@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.jhf</groupId>
+    <artifactId>joda</artifactId>
+    <version>1.2</version>
+    <name>Joda Time</name>
+    <description>Use java date with confidence</description>
+    <packaging>jar</packaging>
+
+    <properties>
+          <version.wildfly.swarm.fraction.plugin>55</version.wildfly.swarm.fraction.plugin>
+          <version.swarm.spi>2017.7.0</version.swarm.spi>
+          <version.swarm>2017.7.0</version.swarm>
+          <version.wildfly>10.1.0.Final</version.wildfly>
+          <version.wildfly.swarm>2017.7.0</version.wildfly.swarm>
+          <swarm.fraction.stability>stable</swarm.fraction.stability>
+      		<swarm.fraction.tags>Web</swarm.fraction.tags>
+    </properties>
+
+    <dependencyManagement>
+      <dependencies>
+        <dependency>
+          <groupId>org.wildfly.swarm</groupId>
+          <artifactId>bom-all</artifactId>
+          <version>${version.wildfly.swarm}</version>
+          <type>pom</type>
+          <scope>import</scope>
+        </dependency>
+
+      </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+      <dependency>
+          <groupId>joda-time</groupId>
+          <artifactId>joda-time</artifactId>
+          <version>2.9.9</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.enterprise</groupId>
+        <artifactId>cdi-api</artifactId>
+        <version>1.2</version>
+        <scope>provided</scope>
+      </dependency>
+
+        <dependency>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
+		<version>1</version>
+            <scope>provided</scope>
+        </dependency>
+
+      <dependency>
+  			<groupId>org.wildfly.swarm</groupId>
+  			<artifactId>container</artifactId>
+  		</dependency>
+
+      <dependency>
+        <groupId>org.wildfly.swarm</groupId>
+        <artifactId>fraction-metadata</artifactId>
+		<version>2017.7.0</version>
+      </dependency>
+
+    </dependencies>
+
+    <build>
+      <plugins>
+        <plugin>
+          <groupId>org.wildfly.swarm</groupId>
+          <artifactId>wildfly-swarm-fraction-plugin</artifactId>
+          <version>${version.wildfly.swarm.fraction.plugin}</version>
+          <executions>
+            <execution>
+              <phase>process-classes</phase>
+              <goals>
+                <goal>process</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+      </plugins>
+    </build>
+
+</project>
