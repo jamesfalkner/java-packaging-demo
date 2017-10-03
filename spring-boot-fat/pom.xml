@@ -4,9 +4,9 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.example.demo</groupId>
-    <artifactId>greeting-spring-boot</artifactId>
+    <artifactId>greeting-spring-boot-fat</artifactId>
     <version>1.0.0</version>
-    <name>Greeting App - Spring Boot</name>
+    <name>Greeting App - Spring Boot - Fat JAR</name>
     <description>A Spring Boot REST Example</description>
     <properties>
         <spring-boot.version>1.5.4.RELEASE</spring-boot.version>

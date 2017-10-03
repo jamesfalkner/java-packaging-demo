@@ -32,6 +32,6 @@ public class GreetingController {
 
     @RequestMapping("/")
     public String greeting() {
-        return "hello from spring boot and j2";
+        return "hello from spring boot Thin JAR";
     }
 }

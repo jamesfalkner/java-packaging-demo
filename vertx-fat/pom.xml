@@ -4,7 +4,7 @@
                       http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.example.demo</groupId>
-  <artifactId>greeting</artifactId>
+  <artifactId>greeting-vertx</artifactId>
   <version>1.0.0</version>
 
   <dependencies>

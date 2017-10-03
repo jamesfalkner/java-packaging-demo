@@ -9,7 +9,7 @@ public class HelloEndpoint {
 
     @GET
     public String hello() {
-        return "hello, the date is " + LocalDate.now().toString();
+        return "hello from Wildfly Swarm FAT Jar, the date is " + LocalDate.now().toString();
     }
 
 }

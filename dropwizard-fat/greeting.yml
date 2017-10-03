@@ -1,2 +1,2 @@
-template: Hello, %s!
+template: Hello from DropWizard FAT Jar, %s!
 defaultName: Stranger

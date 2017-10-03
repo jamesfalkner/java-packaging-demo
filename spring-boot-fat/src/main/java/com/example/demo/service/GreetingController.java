@@ -32,6 +32,6 @@ public class GreetingController {
 
     @RequestMapping("/")
     public String greeting() {
-        return "hello from spring boot";
+        return "hello from spring boot fat JAR";
     }
 }

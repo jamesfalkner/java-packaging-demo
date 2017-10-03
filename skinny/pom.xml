@@ -19,11 +19,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.test</groupId>
-  <artifactId>weight</artifactId>
+  <artifactId>weight-skinny</artifactId>
   <version>1.0</version>
   <packaging>war</packaging>
 
-  <name>Weight loss test</name>
+  <name>Weight loss test - Skinny JAR</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -70,6 +70,9 @@
             </goals>
           </execution>
         </executions>
+	<configuration>
+		<hollow>true</hollow>
+	</configuration>
       </plugin>
 
       <plugin>

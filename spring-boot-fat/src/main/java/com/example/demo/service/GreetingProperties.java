@@ -23,7 +23,7 @@ import org.springframework.stereotype.Component;
 @ConfigurationProperties("greeting")
 public class GreetingProperties {
 
-    private String message = "Hello, %s!";
+    private String message = "Hello from Spring Boot FAT Jar, %s!";
 
     public String getMessage() {
         return message;
