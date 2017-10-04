@@ -4,8 +4,8 @@
                       http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.example.demo</groupId>
-  <artifactId>greeting-vertx-fat</artifactId>
-  <name>Vert.x - FAT</name>
+  <artifactId>greeting-vertx</artifactId>
+  <name>Vert.x - THIN</name>
   <version>1.0.0</version>
 
   <dependencies>
@@ -14,6 +14,12 @@
       <artifactId>vertx-core</artifactId>
       <version>3.0.0</version>
     </dependency>
+    <dependency>
+      <groupId>joda-time</groupId>
+      <artifactId>joda-time</artifactId>
+      <version>2.9.9</version>
+    </dependency>
+
   </dependencies>
 
   <build>
