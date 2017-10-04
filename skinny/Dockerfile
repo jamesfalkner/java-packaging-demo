@@ -5,6 +5,6 @@ ENTRYPOINT [ "sh", "-c", "java -Djava.security.egd=file:/dev/./urandom -jar holl
 
 EXPOSE 8080
 
-ADD target/weight-1.0-hollow-swarm.jar hollow.jar
-ADD target/weight-1.0.war app.war
+ADD target/weight-skinny-1.0-hollow-swarm.jar hollow.jar
+ADD target/weight-skinny-1.0.war app.war
 

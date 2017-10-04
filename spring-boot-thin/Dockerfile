@@ -6,5 +6,5 @@ ENTRYPOINT [ "sh", "-c", "java -Djava.security.egd=file:/dev/./urandom -jar app.
 EXPOSE 8080
 
 ADD target/thin/root/repository repository
-ADD target/thin/root/greeting-spring-boot.jar app.jar
+ADD target/thin/root/greeting-spring-boot-thin.jar app.jar
 
