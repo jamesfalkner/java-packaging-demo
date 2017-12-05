@@ -4,7 +4,7 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import org.joda.time.LocalDate;
 
-@Path("/hello")
+@Path("/greeting")
 public class HelloEndpoint {
 
     @GET

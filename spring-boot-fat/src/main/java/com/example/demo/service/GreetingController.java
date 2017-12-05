@@ -15,12 +15,12 @@
  */
 package com.example.demo.service;
 
+import org.joda.time.LocalDate;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
+@RequestMapping("/api/greeting")
 public class GreetingController {
 
     private final GreetingProperties properties;
@@ -30,8 +30,9 @@ public class GreetingController {
         this.properties = properties;
     }
 
-    @RequestMapping("/")
-    public String greeting() {
-        return "hello from spring boot fat JAR";
+    @RequestMapping(method = RequestMethod.GET)
+    public String greeting(@RequestParam(value="name", required=false) String name) {
+        String suffix = name != null ? name : "World";
+        return String.format(properties.getMessage(), suffix) + ", the date is " + LocalDate.now().toString();
     }
 }

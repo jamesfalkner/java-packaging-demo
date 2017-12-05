@@ -5,17 +5,17 @@
 
     <groupId>com.jhf</groupId>
     <artifactId>joda</artifactId>
-    <version>1.2</version>
+    <version>1.3</version>
     <name>Joda Time</name>
     <description>Use java date with confidence</description>
     <packaging>jar</packaging>
 
     <properties>
           <version.wildfly.swarm.fraction.plugin>55</version.wildfly.swarm.fraction.plugin>
-          <version.swarm.spi>2017.7.0</version.swarm.spi>
-          <version.swarm>2017.7.0</version.swarm>
+          <version.swarm.spi>2017.11.0</version.swarm.spi>
+          <version.swarm>2017.11.0</version.swarm>
           <version.wildfly>10.1.0.Final</version.wildfly>
-          <version.wildfly.swarm>2017.7.0</version.wildfly.swarm>
+          <version.wildfly.swarm>2017.11.0</version.wildfly.swarm>
           <swarm.fraction.stability>stable</swarm.fraction.stability>
       		<swarm.fraction.tags>Web</swarm.fraction.tags>
     </properties>
@@ -61,7 +61,7 @@
       <dependency>
         <groupId>org.wildfly.swarm</groupId>
         <artifactId>fraction-metadata</artifactId>
-		<version>2017.7.0</version>
+		<version>2017.11.0</version>
       </dependency>
 
     </dependencies>

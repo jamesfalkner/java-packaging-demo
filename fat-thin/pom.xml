@@ -31,7 +31,7 @@
     <java.version>1.8</java.version>
     <failOnMissingWebXml>false</failOnMissingWebXml>
 
-    <version.wildfly.swarm>2017.7.0</version.wildfly.swarm>
+    <version.wildfly.swarm>2017.11.0</version.wildfly.swarm>
 
   </properties>
 
