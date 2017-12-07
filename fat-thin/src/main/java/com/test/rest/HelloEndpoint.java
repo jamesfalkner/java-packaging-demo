@@ -10,7 +10,7 @@ public class HelloEndpoint {
     @GET
     public String hello() {
         String type = "Java EE/WildFly Thin WAR";
-        if (System.getProperty("swarm.app.name") != null) {
+        if (System.getProperty("swarm.bundled.dependencies") != null) {
             type = "WildFly Swarm Far JAR";
         }
         return "hello from " + type + ", the date is " + LocalDate.now().toString();
