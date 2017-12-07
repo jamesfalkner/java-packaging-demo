@@ -11,7 +11,7 @@ import static io.vertx.core.http.HttpHeaders.CONTENT_TYPE;
 
 public class App extends AbstractVerticle {
 
-    static final String TEMPLATE = "Hello from Vert.x Thin JAR, %s!";
+    static final String TEMPLATE = "Hello update from Vert.x Thin JAR, %s!";
 
     @Override
     public void start() {
